@@ -1,0 +1,90 @@
+header {
+  background-color: hsl(0, 80%, 65%);
+  padding: 1em 0;
+  margin: 0px;
+  height: 15em;
+  text-align: center;
+}
+
+h1 {font-size: 60px;}
+
+h2 {font-size: 40px;}
+
+#main {
+  display: flex;
+  margin: 1em 0px 0px 0px;
+}
+
+#img-div {
+  width: 500px;
+  padding: 0.5em 1.25em 0.5em 1.25em;
+  margin: 1em;
+}
+
+#image {
+  max-width: 100%;
+  display: block;
+  height: auto;
+  margin: 0 auto;
+  border-radius: 50%;
+}
+
+#img-caption {
+  font-size: 20px;
+  text-align: center;
+}
+
+#tribute-info {
+  font-size: 28px;
+  margin: 0px;
+  padding: 0.5em 1.25em 0.5em 1.25em;
+  border-color: hsl(0, 100%, 20%);
+  border-width: 10px;
+  border-style: solid;
+  border-radius: 100px;
+}
+
+#apple-container {
+  width: 100px;
+  margin-left: 10px;
+  padding: 8em 0px 8em 0px;
+}
+
+.apple {
+    height: 30px;
+    width: 30px;
+    background: red;
+    margin: 50px auto;
+    border-radius: 15px;
+    position: relative;
+  }
+
+  #apple {
+    animation-name: drop;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+  }
+
+  @keyframes drop {
+    0% {
+      top: -40px;
+    }
+    100% {
+      top: 55px;
+    }
+  }
+
+#small-image {
+  height: 100px;
+}
+
+@media (max-width: 720px) {
+  header {max-width: 100%; height: auto;}
+  h1 {font-size: 40px;}
+  h2 {font-size: 20px;}
+  #main {flex-direction: column;}
+  #img-div {width: 300px;}
+  #img-caption {font-size: 12px;}
+  #tribute-info {font-size: 12px; border-radius: 50px; max-width: 100%;}
+  #apple-container {padding: 0px 8em 0px 8em;}
+}
